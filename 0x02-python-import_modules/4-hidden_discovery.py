@@ -5,4 +5,4 @@ if __name__ == "__main__":
     strings = dir(hidden_4)
     for string in strings:
         if string[:2] != "__":
-            print(string.sorted)
+            print("{:s}".format(string)
