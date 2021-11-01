@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""module defining a square class"""
+
+
 class Square:
     """Private instance attribute: size
     Instantiation with optional size:
@@ -8,9 +11,9 @@ class Square:
     if size is less than 0, raise a ValueError exception with the
     message size must be >= 0
     """
-
     def __init__(self, size=0):
         """data initialization"""
+
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:

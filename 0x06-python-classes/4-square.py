@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""module defining a square class,get the atrributes
+with getter function and finds the area"""
+
+
 class Square:
     """Private instance attribute: size
     Instantiation with optional size: def __init__(self, size=0):

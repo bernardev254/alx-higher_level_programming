@@ -1,16 +1,21 @@
 #!/usr/bin/python3
+"""module defining a square class,
+initializer and an area method"""
+
+
 class Square:
     """Private instance attribute: size
     Instantiation with optional size:
     def __init__(self, size=0):
-    size must be an integer, otherwise raise a TypeError
-    exception with the message size must be an integer
-    if size is less than 0, raise a ValueError exception
-    with the message size must be >= 0
+    size must be an integer, otherwise raise a
+    TypeError exception with the message size must be an integer
+    if size is less than 0, raise a ValueError exception with the
+    message size must be >= 0
     """
+
     def __init__(self, size=0):
-        """data initialization
-        """
+        """data initialization"""
+
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -18,5 +23,6 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Returns area of the square"""
+        """method returning the area of the square"""
+
         return self.__size ** 2
